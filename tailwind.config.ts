@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        pixel: ['"Press Start 2P"', 'monospace'],
+        terminal: ['"VT323"', 'monospace'],
+        mono: ['"IBM Plex Mono"', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +62,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "royal-gold": "hsl(var(--royal-gold))",
+        "royal-gold-dim": "hsl(var(--royal-gold-dim))",
+        "royal-crimson": "hsl(var(--royal-crimson))",
+        "royal-burgundy": "hsl(var(--royal-burgundy))",
+        "phosphor-green": "hsl(var(--phosphor-green))",
+        "phosphor-amber": "hsl(var(--phosphor-amber))",
+        parchment: "hsl(var(--parchment))",
+        "seal-red": "hsl(var(--seal-red))",
+        "decree-gold": "hsl(var(--decree-gold))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,20 +79,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
